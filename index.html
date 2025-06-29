@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripadvisor-Clone</title>
+    <link rel="icon" href="tripadvisor-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <img src="tripadvisor-icon.png" alt="Tripadvisor Logo">
+            <h1>Tripadvisor</h1>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search destinations...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Hotels</a>
+            <a href="#">Flights</a>
+            <a href="#">Restaurants</a>
+        </nav>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-bed"></i> Hotels</a></li>
+            <li><a href="#"><i class="fa-solid fa-plane"></i> Flights</a></li>
+            <li><a href="#"><i class="fa-solid fa-utensils"></i> Restaurants</a></li>
+            <li><a href="#"><i class="fa-solid fa-camera"></i> Things To Do</a></li>
+            <li><a href="#"><i class="fa-solid fa-box-open"></i> Packages</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-section">
+        <input type="text" placeholder="Search cities or destinations" class="search-input" />
+        <div class="filters">
+            <div class="filter-group">
+                <label for="priceRange">Price Range:</label>
+                <select id="priceRange" class="filter-select">
+                    <option value="">Any</option>
+                    <option value="low">1K - Below</option>
+                    <option value="medium">3K - Budget</option>
+                    <option value="high">10K - Above</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="rating">Rating:</label>
+                <select id="rating" class="filter-select">
+                    <option value="">Any</option>
+                    <option value="5">5 Stars ⭐ </option>
+                    <option value="4">4 Stars ⭐ </option>
+                    <option value="3">3 Stars ⭐ </option>
+                    <option value="2">2 Stars ⭐ </option>
+                    <option value="1">1 Star ⭐ </option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="sales-image">
+        <img src="image__1.jpg" alt="sale image">
+    </div>
+
+    <div class="recommended">
+        <h2 class="recommended_tittle">Stay at the world's top hotels</h2>
+        <p>2025's Travellers' Choice Awards Best of the Best Hotels</p>
+        <div class="recommended_container">
+            <div class="course-card">
+                <img src="image__3-world.jpg" alt="WORLD-IMAGE">
+                <h2>World</h2>
+            </div>
+            <div class="course-card">
+                <img src="image__4-luxuary.jpg" alt="WORLD-IMAGE">
+                <h2>Luxury</h2>
+            </div>
+            <div class="course-card">
+                <img src="image__5-family_friendly.jpg" alt="WORLD-IMAGE">
+                <h2>Family-Friendly</h2>
+            </div>
+            <div class="course-card">
+                <img src="image__6-one_kind.jpg" alt="WORLD-IMAGE">
+                <h2>One of a Kind</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="listing-section">
+        <h2 class="section-title">Top Listings</h2>
+        <div class="listing-container">
+            <div class="listing-card">
+                <img src="image__7-seashore_resturants.jpg" alt="Hotel">
+                <h3>Seaside Resort</h3>
+                <p class="rating">⭐⭐⭐⭐☆</p>
+                <p>Relax with ocean views and premium comfort.</p>
+            </div>
+            <div class="listing-card">
+                <img src="image__8-trendy_dinning.jpg" alt="Restaurant">
+                <h3>Urban Bistro</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p>Trendy dining with local and global flavors.</p>
+            </div>
+            <div class="listing-card">
+                <img src="image__9-jeep-safari.jpg" alt="Activity">
+                <h3>Jungle Safari</h3>
+                <p class="rating">⭐⭐⭐⭐</p>
+                <p>Explore the wild with experienced guides.</p>
+            </div>
+            <div class="listing-card">
+                <img src="image__10-ship.jpg" alt="Restaurant">
+                <h3>Ship</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p>Explore the World Through the Luxuary Ship.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-copy">© 2025 Tripadvisor. All rights reserved.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
